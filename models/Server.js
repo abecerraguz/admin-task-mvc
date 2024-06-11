@@ -31,7 +31,7 @@ class Server {
         
         // Cramos la app  de express
         this.app = express();
-        this.port = process.env.PUERTO_LOCAL || process.env.PUERTO_PRODUCCION;
+        this.port = process.env.PORT || 8000 ;
 
         this.backEndApi = {
             rootTareas:'/tareas',
