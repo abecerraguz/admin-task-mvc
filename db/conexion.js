@@ -6,9 +6,7 @@ dotenv.config();
 
 
 const pool = new Pool({
-    
-    connectionString: process.env.DATABASE_URL_LOCAL || process.env.PUERTO_PROD
-
+    connectionString: process.env.DATABASE_URL_LOCAL || process.env.DATABASE_URL
  });
 
 export default pool;
