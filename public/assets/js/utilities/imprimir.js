@@ -58,4 +58,6 @@ const imprimir = async () => {
     }
 }
 
+
+
 export default imprimir

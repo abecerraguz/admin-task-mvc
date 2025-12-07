@@ -23,16 +23,13 @@ if( typeof window === 'object' ){
             UI.loading.style.display = 'none';
         })
 
-        // 
-        // UI.actualizarTarea.addEventListener('click',(e)=>{
-        //     e.preventDefault();
-        //     actualizarTarea();
-        // })
-
-
-
+  
         imprimir();
 
+         const footer = UI.footerDate
+         if (!footer) return;
+         const currentYear = new Date().getFullYear();
+         footer.textContent = `Administrador de tareas ${currentYear}`;
 
 
 
